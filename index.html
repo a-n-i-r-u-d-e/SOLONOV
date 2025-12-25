@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOLONOV | Digital Force Multiplier</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@300;400;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <canvas id="magnetic-canvas"></canvas>
+
+    <nav>
+        <div class="logo">SOLONOV</div>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Work</a></li>
+            <li><a href="#intel">Intelligence</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <span class="section-tag" data-aos="fade-right">Est. 2024</span>
+        <h1 data-aos="fade-up">WE CREATE <br><span class="accent">DIGITAL GRAVITY.</span></h1>
+        <p style="max-width: 600px; font-size: 1.1rem; margin-bottom: 2rem; color: #ccc;">SOLONOV is a multi-disciplinary consultancy pulling brands into the future.</p>
+        <a href="#contact" class="btn-neon" data-aos="zoom-in">Launch a Project</a>
+    </section>
+
+    <section id="about">
+        <div class="about-grid">
+            <div data-aos="fade-right">
+                <span class="section-tag">Our DNA</span>
+                <h2>The Architect <br>of Impact.</h2>
+                <p style="color: #ccc; font-size: 1rem; line-height: 1.8; margin-bottom: 1.5rem;">
+                    SOLONOV isn't just a consultancy; we are a high-performance engine for digital growth. Founded on the principle of <strong>Force Multiplication</strong>, we merge radical engineering with cinematic storytelling.
+                </p>
+                <p style="color: #888; font-size: 0.9rem; line-height: 1.6;">
+                    We don't follow trends—we build the infrastructure that creates them. By combining deep technical stacks with aggressive market psychology, we ensure your brand doesn't just exist, but dominates the field.
+                </p>
+            </div>
+            <div data-aos="fade-left">
+                <div class="stat-box">
+                    <h3>99%</h3>
+                    <p>PRECISION RATE</p>
+                </div>
+                <div class="stat-box">
+                    <h3>24/7</h3>
+                    <p>GLOBAL OPERATION</p>
+                </div>
+                <div class="stat-box">
+                    <h3>01</h3>
+                    <p>MISSION: DOMINANCE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <span class="section-tag">Expertise</span>
+        <h2>Core Powers</h2>
+        <div class="services-grid">
+            <div class="service-card" data-aos="fade-up">
+                <i class="fas fa-bolt" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                <h3>Digital Marketing</h3>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="fas fa-layer-group" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                <h3>App Development</h3>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-code" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                <h3>Web Development</h3>
+            </div>
+            <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                <i class="fas fa-clapperboard" style="font-size: 2rem; margin-bottom: 1rem;"></i>
+                <h3>Video Editing</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="intel">
+        <div class="intel-grid">
+            <div data-aos="fade-right">
+                <span class="section-tag">Client Intel</span>
+                <h2>Validated <br>Momentum.</h2>
+                
+                <div class="testimonial-card">
+                    <p style="font-style: italic; margin-bottom: 1.5rem; color: #ccc;">"SOLONOV didn't just build our app; they built our market dominance. The growth was immediate."</p>
+                    <strong>— MARCUS VANE, CEO NEON-TECH</strong>
+                </div>
+
+                <div class="testimonial-card">
+                    <p style="font-style: italic; margin-bottom: 1.5rem; color: #ccc;">"The high-velocity video production tripled our engagement within 48 hours of launch."</p>
+                    <strong>— SARAH CHENG, HEAD OF GROWTH</strong>
+                </div>
+            </div>
+
+            <div data-aos="fade-left">
+                <span class="section-tag">Strategic Intel</span>
+                <h2>F.A.Q.</h2>
+                
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">How fast can we launch? <i class="fas fa-plus"></i></div>
+                    <div class="faq-answer"><p>Our typical high-velocity deployment takes 4–6 weeks from architecture to final launch.</p></div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">What is "Digital Gravity"? <i class="fas fa-plus"></i></div>
+                    <div class="faq-answer"><p>It's our proprietary methodology of aligning UI, UX, and aggressive marketing to pull users toward your brand automatically.</p></div>
+                </div>
+
+                <div class="faq-item" onclick="toggleFaq(this)">
+                    <div class="faq-question">Do you offer ongoing support? <i class="fas fa-plus"></i></div>
+                    <div class="faq-answer"><p>We operate as a force multiplier, offering retained strategic oversight for brands scaling beyond $10M ARR.</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <div>
+                <span class="section-tag">Get in touch</span>
+                <h2>Start the <br>Conver- <br>sation.</h2>
+                <div class="socials" style="margin-top: 2rem;">
+                    <a href="#" style="color:#fff; font-size:1.5rem; margin-right:1rem;"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" style="color:#fff; font-size:1.5rem; margin-right:1rem;"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <form data-aos="fade-left">
+                <input type="text" placeholder="YOUR NAME">
+                <input type="email" placeholder="EMAIL ADDRESS">
+                <textarea rows="5" placeholder="VISION SCOPE"></textarea>
+                <button type="submit" class="btn-neon" style="width: 100%;">Send Intel</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            <p>&copy; 2025 SOLONOV CONSULTANCY.</p>
+            <p>LOCATED GLOBALLY // 24/7</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
